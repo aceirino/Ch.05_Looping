@@ -10,25 +10,47 @@ Add conditional statements to figure out who wins and keep the records
 When the user quits print a win/loss record
 
 '''
-rock=0
-paper=0
-scissor=0
-quit = False
 import random
+wins = 0
+losses = 0
+ties = 0
 
-while quit == False:
-    for i in range (1):
-        toss = random.randrange (1,4)
-        if toss == 1:
-            print ("rock")
-            rock=rock+1
-        elif toss == 2:
-            print ("paper")
-            paper=paper+1
-        else:
-            print ("scissor")
-            scissor=scissor+1
+while False:
 
-    print(rock)
-    print(paper)
-    print(scissor)
+    print("1: Rock")
+    print("2: Paper")
+    print("3: Scissors")
+    print("4: Status")
+    print("5: Quit")
+
+
+# Renames the computer's choice to a word.
+    computer = random.randrange(3)
+    if computer == 0:
+        computer = "rock"
+    elif computer == 1:
+        computer = "paper"
+    else:
+        computer = "scissors"
+
+#Ask the user for their choice
+choice = int(input("Please shoot! "))
+
+# Renames the user's choice to a word.
+if choice == 1:
+    choice = "Rock"
+elif choice == 2:
+    choice = "Paper"
+elif choice == 3:
+    choice = "Scissors"
+elif choice == 4:
+    choice = "Status"
+else:
+    choice = "Quit"
+
+
+
+
+print(wins)
+print(losses)
+print(ties)
