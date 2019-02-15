@@ -14,7 +14,7 @@ import random
 wins = 0
 losses = 0
 ties = 0
-
+computer =0
 while False:
 
     print("1: Rock")
@@ -25,13 +25,14 @@ while False:
 
 
 # Renames the computer's choice to a word.
-    computer = random.randrange(3)
-    if computer == 0:
-        computer = "rock"
-    elif computer == 1:
-        computer = "paper"
-    else:
-        computer = "scissors"
+    for i in range (1):
+        computer = random.randrange(3)
+        if computer == 0:
+            computer = "rock"
+        elif computer == 1:
+            computer = "paper"
+        else:
+            computer = "scissors"
 
 #Ask the user for their choice
 choice = int(input("Please shoot! "))
@@ -48,8 +49,7 @@ elif choice == 4:
 else:
     choice = "Quit"
 
-
-
+if "Rock"
 
 print(wins)
 print(losses)
