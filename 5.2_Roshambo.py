@@ -49,7 +49,8 @@ elif choice == 4:
 else:
     choice = "Quit"
 
-if "Rock"
+if choice==1 and computer==3:
+    print()
 
 print(wins)
 print(losses)
