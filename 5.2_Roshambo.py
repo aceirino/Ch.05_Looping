@@ -49,9 +49,16 @@ elif choice == 4:
 else:
     choice = "Quit"
 
-if choice==1 and computer==3:
-    print()
+if choice==computer:
+    print("tie")
+elif choice==1 and computer==1:
+    print("lose")
+elif choice==2 and computer==2:
+    print("lose")
+elif choice==3 and computer==0:
+    print("lose")
+else:
+    print("win")
 
-print(wins)
 print(losses)
 print(ties)
