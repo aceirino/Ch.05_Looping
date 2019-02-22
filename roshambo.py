@@ -25,40 +25,48 @@ while quit == False:
 
     choice = int(input("Please shoot! "))
 
-    if choice == 1:
-        choice = "Rock"
-    elif choice == 2:
-        choice = "Paper"
-    elif choice == 3:
-        choice = "Scissors"
-    elif choice == 4:
-        choice = "Status"
-    else:
+    if choice==5:
         break
 
-    for i in range (1):
-        computer = random.randrange(3)
-        if computer == 0:
-            computer = "rock"
-        elif computer == 1:
-            computer = "paper"
-        else:
-            computer = "scissors"
+    if choice!=4:
 
-    if choice == computer:
-        print("tie")
-    elif choice=="Rock" and computer=="paper":
-        print("lose")
-        losses=losses+1
-    elif choice=="Paper" and computer=="scissors":
-        print("lose")
-        losses = losses + 1
-    elif choice=="Scissors" and computer=="rock":
-        print("lose")
-        losses = losses + 1
+        if choice == 1:
+            choicename = "Rock"
+        elif choice == 2:
+            choicename = "Paper"
+        elif choice == 3:
+            choicename = "Scissors"
+
+
+
+        computer = random.randrange(1,4)
+        if computer == 1:
+            computername = "Rock"
+        elif computer == 2:
+            computername = "Paper"
+        else:
+            computername = "Scissors"
+
+        print("You chose ",choicename," and the computer chose ", computername)
+
+
+        if choice == computer:
+            print("tie")
+        elif choice==1 and computer==2:
+            print("lose")
+            losses=losses+1
+        elif choice==2 and computer==3:
+            print("lose")
+            losses = losses + 1
+        elif choice==3 and computer==1:
+            print("lose")
+            losses = losses + 1
+        else:
+            print("win")
+            wins=wins+1
     else:
-        print("win")
-        wins=wins+1
+        print("wins", wins)
+        print("losses", losses)
 
 print("wins", wins)
 print("losses", losses)
