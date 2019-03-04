@@ -28,7 +28,7 @@ while done==False:
         print("water left:", drinksleft)
         print("The natives are", natives, ("behind you"))
     elif user_choice.lower()=="d":
-        tiredness==0
+        tiredness=0
     elif user_choice.lower()=="c":
         miles+=random.randrange(10, 21)
         print("miles traveled: ", miles)
@@ -42,10 +42,24 @@ while done==False:
         if drinksleft==0:
             print("error")
         else:
-            thirst==0
+            thirst=0
             drinksleft+=-1
     if thirst>6:
         print("You died of thirst!")
         break
     elif thirst>4:
         print("You are thirsty.")
+    if tiredness>8:
+        print("Your camel is dead")
+        break
+    elif tiredness>5:
+        print("Your camel is getting tired")
+    if natives==miles:
+        print("natives caught you")
+        break
+    elif (miles-natives)<16:
+        print("the natives are getting close!")
+    if miles==200:
+        print("you won!")
+    if random.randrange(1,21)==2:
+        print("you found an oasis!")
