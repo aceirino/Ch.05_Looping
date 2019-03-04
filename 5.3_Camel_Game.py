@@ -63,3 +63,4 @@ while done==False:
         print("you won!")
     if random.randrange(1,21)==2:
         print("you found an oasis!")
+        drinksleft=3
