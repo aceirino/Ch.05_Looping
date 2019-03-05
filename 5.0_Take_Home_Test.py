@@ -17,6 +17,7 @@ but I will definitely not ask another person except the instructor. Signed: ____
   2. Write a Python program that will use a FOR loop to print the even
      numbers from 2 to 100, inclusive.
 '''
+for i in range(2,101):
 
 
 
