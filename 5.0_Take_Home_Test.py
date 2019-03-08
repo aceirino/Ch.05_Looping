@@ -18,6 +18,8 @@ but I will definitely not ask another person except the instructor. Signed: ____
      numbers from 2 to 100, inclusive.
 '''
 for i in range(2,101):
+if i%2==0:
+    print(i)
 
 
 
@@ -34,10 +36,12 @@ for i in range(2,101):
 
 
 
+
 '''
   4. Write a program that prints a random integer from 1 to 10 (inclusive).
 '''
-
+for i in range(1,11):
+    print(i)
 
 
 
