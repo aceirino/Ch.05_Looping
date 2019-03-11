@@ -30,8 +30,11 @@ if i%2==0:
      10 down to, and including, 0. Then print the words Blast off! Remember, use
      a WHILE loop, don't use a FOR loop.
 '''
-
-
+countdown=10
+while countdown>=0:
+    print(countdown)
+    countdown-=1
+print("blast off!")
 
 
 
@@ -40,8 +43,9 @@ if i%2==0:
 '''
   4. Write a program that prints a random integer from 1 to 10 (inclusive).
 '''
-for i in range(1,11):
-    print(i)
+import random
+number=random.randint(1,11)
+print(number)
 
 
 
