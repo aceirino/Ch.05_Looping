@@ -3,13 +3,13 @@ HONOR CODE: I solemnly promise that while taking this test I will only use PyCha
 but I will definitely not ask another person except the instructor. Signed: ______________________
  1. Make the following program work.
    '''
-     print("This program takes three numbers and returns the sum.")
-     total = 0
+print("This program takes three numbers and returns the sum.")
+total=0
 
-     for i in range(3):
-         x = input("Enter a number: ")
-         total = total + i
-     print("The total is:", x)
+for i in range(3):
+    x=int(input("Enter a number: "))
+    total=total+i
+print("The total is:", x)
 
 
 
@@ -18,8 +18,8 @@ but I will definitely not ask another person except the instructor. Signed: ____
      numbers from 2 to 100, inclusive.
 '''
 for i in range(2,101):
-if i%2==0:
-    print(i)
+    if i%2==0:
+        print(i)
 
 
 
@@ -44,7 +44,7 @@ print("blast off!")
   4. Write a program that prints a random integer from 1 to 10 (inclusive).
 '''
 import random
-number=random.randint(1,11)
+number=random.randrange(1,11)
 print(number)
 
 
@@ -61,3 +61,8 @@ print(number)
      if statements.
       
 '''
+trial=0
+for i in range(7):
+    x=int(input("give me a number: "))
+    total=total+x
+print(total)
