@@ -8,8 +8,8 @@ total=0
 
 for i in range(3):
     x=int(input("Enter a number: "))
-    total=total+i
-print("The total is:", x)
+    total=total+x
+print("The total is:", total)
 
 
 
@@ -61,8 +61,20 @@ print(number)
      if statements.
       
 '''
-trial=0
+positive=0
+negative=0
+zero=0
+total=0
 for i in range(7):
     x=int(input("give me a number: "))
     total=total+x
-print(total)
+    if x>=1:
+        positive+=1
+    elif x<=-1:
+        negative+=1
+    else:
+        zero+=1
+print("total:",total)
+print("positives:",positive)
+print("negatives:",negative)
+print("zeroes:",zero)
